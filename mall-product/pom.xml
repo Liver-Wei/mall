@@ -9,7 +9,7 @@
         <relativePath/> <!-- lookup parent from repository -->
     </parent>
     <groupId>com.liver.mall</groupId>
-    <artifactId>demo</artifactId>
+    <artifactId>mall-product</artifactId>
     <version>0.0.1-SNAPSHOT</version>
     <name>mall-product</name>
     <description>商城-商城商品</description>
@@ -18,6 +18,11 @@
         <spring-cloud.version>2021.0.4</spring-cloud.version>
     </properties>
     <dependencies>
+        <dependency>
+            <groupId>com.liver.mall</groupId>
+            <artifactId>mall-common</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
+        </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
