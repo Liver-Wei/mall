@@ -38,7 +38,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
         //组装树
 
         //2. 查出所有一级分类
-        List<CategoryEntity> Level1 = categoryEntityList.stream()
+        List<CategoryEntity> menu = categoryEntityList.stream()
                 //查出所有一级分类
                 .filter(categoryEntity -> categoryEntity.getCatLevel() == 1)
                 //设置一级分类的子分类数据
@@ -52,7 +52,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
                 .sorted((l1, l2) -> l1.getSort() - l2.getSort())
                 //返回整理好的数据
                 .collect(Collectors.toList());
-        return categoryEntityList;
+        return menu;
     }
 
     private List<CategoryEntity> getChildren(CategoryEntity parent, List<CategoryEntity> categoryEntityList) {
