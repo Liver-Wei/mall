@@ -59,7 +59,7 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
         List<CategoryEntity> categoryEntities = categoryEntityList.stream()
                 //在所有分类中找到子id等于父id的数据
                 .filter(categoryEntity -> categoryEntity.getParentCid() == parent.getCatId())
-                //设置子分类下的子分类数据，递归设置，结束条件(filter)：parentId = cid为null
+                //设置子分类下的子分类数据，递归设置，结束条件(filter)：用自己的id作为父id一直在categoryEntityList查找，找不到自己的id作为父id结束
                 .map(categoryEntity -> {
                     categoryEntity.setChildren(getChildren(categoryEntity, categoryEntityList));
                     return categoryEntity;
