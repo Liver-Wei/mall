@@ -10,7 +10,7 @@ spring:
     url: jdbc:mysql://localhost:3305/mall_wms?useUnicode=true&characterEncoding=UTF-8&useSSL=false&serverTimezone=Asia/Shanghai
     username: root
     password: root
-    #oracle配置
+  #oracle配置
     #    driverClassName: oracle.jdbc.OracleDriver
     #    url: jdbc:oracle:thin:@47.100.206.162:1521:xe
     #    username: renren
