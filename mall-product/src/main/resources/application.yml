@@ -8,6 +8,11 @@ spring:
     nacos:
       discovery:
         server-addr: 127.0.0.1:8848
+    alicloud:
+      access-key: LTAI5tDud7gzfV9KHJbp3rKC
+      secret-key: GKbZX0IuO4B5RedPzYzBRjRrNg5VSt
+      oss:
+        endpoint: oss-cn-shenzhen.aliyuncs.com
   application:
     name: mall-product
 
@@ -16,5 +21,10 @@ mybatis-plus:
   global-config:
     db-config:
       id-type: auto
+#      logic-delete-field: showStatus
+#      logic-delete-value: 0
+#      logic-not-delete-value: 1
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
 server:
   port: 10001

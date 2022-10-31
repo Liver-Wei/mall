@@ -55,6 +55,12 @@ public class CategoryServiceImpl extends ServiceImpl<CategoryDao, CategoryEntity
         return menu;
     }
 
+    @Override
+    public void removeMenuByIds(List<Long> asList) {
+        baseMapper.deleteBatchIds(asList);
+    }
+
+
     private List<CategoryEntity> getChildren(CategoryEntity parent, List<CategoryEntity> categoryEntityList) {
         List<CategoryEntity> categoryEntities = categoryEntityList.stream()
                 //在所有分类中找到子id等于父id的数据
