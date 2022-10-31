@@ -23,8 +23,8 @@ class MallProductApplicationTests {
 ////        // Endpoint以华东1（杭州）为例，其它Region请按实际情况填写。
 ////        String endpoint = "oss-cn-shenzhen.aliyuncs.com";
 ////        // 阿里云账号AccessKey拥有所有API的访问权限，风险很高。强烈建议您创建并使用RAM用户进行API访问或日常运维，请登录RAM控制台创建RAM用户。
-//        String accessKeyId = "LTAI5tDud7gzfV9KHJbp3rKC";
-//        String accessKeySecret = "GKbZX0IuO4B5RedPzYzBRjRrNg5VSt";
+//        String accessKeyId = "";
+//        String accessKeySecret = "";
 //        // 填写Bucket名称，例如examplebucket。
 //        // 填写Object完整路径，例如exampledir/exampleobject.txt。Object完整路径中不能包含Bucket名称。
 //        //String objectName = "\u202AE:\\Downloads\\icon\\waimai.png";
